@@ -24,10 +24,14 @@ const aritmetika3 = treciassarasas [0] -treciassarasas [1] + treciassarasas[2] -
 console.log(aritmetika3);
 
 
-const pirmagrupe =['vienas', 'du', 'trys', 'keturi', 'penki'];
+const pirmagrupe = ['vienas', 'du', 'trys', 'keturi', 'penki'];
 const antragrupe = ['sesi', 'septyni', 'astuoni', 'devyni', 'desimt'];
 const treciagrupe = ['vienuolika', 'dvylika', 'trylika', 'keturiolika', 'penkiolika'];
 console.log(pirmagrupe, antragrupe, treciagrupe);
+
+
+
+
 
 
 
