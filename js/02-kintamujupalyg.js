@@ -2,4 +2,38 @@
 
 const a = 5;
 const b = 10;
-console.log(a > b);
+
+if (a > b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (a < b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (a === b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+if (a !== b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (a >= b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (a <= b) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
