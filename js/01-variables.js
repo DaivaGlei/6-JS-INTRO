@@ -1,10 +1,5 @@
-
-
-const x = 'wwfwfwf';
-console.log(x);
-
-const abc = ['a', 'b', 'c', 'd', 'e', 'f'];
-console.log(abc);
+console.log(123455);
+console.log('labas');
 
 
 
