@@ -59,7 +59,84 @@ const raudonolenght = tekstas22.length;
 console.log(tekstas11.length);
 console.log(tekstas22.length);
 
+if (tekstas11.length > tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (tekstas11.length < tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (tekstas11.length === tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (tekstas11.length !== tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
 if (tekstas11.length >= tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (tekstas11.length <= tekstas22.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+const pirmagrupe = ['vienas', 'du', 'trys', 'keturi'];
+const antragrupe = ['sesi', 'septyni', 'astuoni', 'devyni', 'desimt'];
+const treciagrupe = ['vienuolika', 'dvylika', 'trylika'];
+const pirmagrupesilgis = pirmagrupe.length;
+const antragrupesilgis = antragrupe.length;
+const treciagrupesilgis = treciagrupe.length;
+console.log(pirmagrupe, antragrupe, treciagrupe);
+console.log(pirmagrupe.length);
+console.log(antragrupe.length);
+console.log(treciagrupe.length);
+
+if (pirmagrupe.length > antragrupe.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmagrupe.length < antragrupe.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmagrupe.length === antragrupe.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmagrupe.length !== antragrupe.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmagrupe.length >= antragrupe.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmagrupe.length <= antragrupe.length) {
     console.log('Pomidoras');
 } else {
     console.log('Bandykite kita karta');
