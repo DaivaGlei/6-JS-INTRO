@@ -141,3 +141,26 @@ if (pirmagrupe.length <= antragrupe.length) {
 } else {
     console.log('Bandykite kita karta');
 }
+
+/*nd - Pratimas if'ams: išspausdinti patarimą ką su savimi pasiimti, kai:
+- lauke šviečia / nešviečia saulė
+- lyja / nelyja
+- stovi vilkas / jo nėra */
+
+
+const oras = 'vilko lauke nera';
+
+
+if (oras === 'lauke sviecia saule') {
+    console.log('pasiimk nuo saules kepure');
+} else if  (oras === 'nesviecia saule') {
+    console.log('kepures neimk');
+} else if  (oras === 'lietus lyja') {
+    console.log('pasiimk lietsargi');
+} else if  ( oras === 'lietus nelyja') {
+    console.log('skecio neimk');
+} else if (oras === 'stovi vilkas') {
+    console.log( 'neik i lauka');
+} else if (oras === 'vilko lauke nera') {
+    console.log( 'gali eiti i lauka');
+}
