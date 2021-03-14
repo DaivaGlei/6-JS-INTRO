@@ -29,16 +29,4 @@ const antragrupe = ['sesi', 'septyni', 'astuoni', 'devyni', 'desimt'];
 const treciagrupe = ['vienuolika', 'dvylika', 'trylika', 'keturiolika', 'penkiolika'];
 console.log(pirmagrupe, antragrupe, treciagrupe);
 
-const text1 = ['a', 'b', 'c', 'd', 'e'];
-const text2 = ['d', 'r', 'h', 'y', 'u', 'u', 'g'];
-const text3 = ['s', 'f', 'g', 'h', 'j', 't', 'o', 'l', 'p', 'g'];
-const text1length = text1.length;
-const text2length = text2.length;
-const text3length = text3.length;
-
-console.log(text1.length);
-console.log(text2.length);
-console.log(text3.length);
-
-console.log(text3.length + ', ' + text2.length + ', ' + text1.length);
 
