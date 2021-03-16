@@ -1,4 +1,4 @@
-funcija daugyba(a, b) {
+funcija daugyba (a, b) {
     const rez = a * b;
     return rez;
 }
