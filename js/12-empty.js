@@ -1,3 +1,12 @@
+function tusciaFunkc(){
+
+}
+ console.log(tusciaFunkc());
+ console.log(tusciaFunkc());
+ console.log(tusciaFunkc());
+
+
+
 function tusciaFuncija(){
     return false;
 }
