@@ -5,9 +5,22 @@ function daugyba (a, b) {
     if (typeof b !== 'number') {
         return 'Antrasis skaicius turi buti skaiciaus reiksmes'
     }
-    const rez = a * b;
+    if (isNaN(a) || a === Infinity || a === -Infinity) {
+        return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
+    }
+ if (!isFinite(b)) {
+    return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
+ }
+
+ 
+    if ('' + a === 'NaN' || Math.abs(a) === -Infinity) {
+        return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
+    }
+        const rez = a * b;
     return rez;
 }
+
+
 
 console.log(daugyba(4, 5), '->', 20);
 console.log(daugyba(5, 5), '->', 25);
