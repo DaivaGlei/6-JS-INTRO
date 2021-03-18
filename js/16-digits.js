@@ -36,4 +36,4 @@ console.log(skaitmenuKiekisSkaiciuje(37060123456), '->', 11);
 console.log(skaitmenuKiekisSkaiciuje(true));
 console.log(skaitmenuKiekisSkaiciuje('asd'));
 console.log(skaitmenuKiekisSkaiciuje(NaN));
-console.log(skaitmenuKiekisSkaiciuje(digits));
+console.log(skaitmenuKiekisSkaiciuje(skaitmenuKiekisSkaiciuje));
