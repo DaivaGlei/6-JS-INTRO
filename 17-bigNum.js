@@ -15,18 +15,26 @@ if (typeof list === null) {
 }
 //logic
 //list[0] tai lygina su pirmu array skaicium
-let biggest = list[0];
+let biggest = - Infinity;
 for (let i = 1; i <list.length; i++) {
     const number = list[i];
+
+    //ar normaus skaicius
+if (typeof number !=== 'number' || !isFinite(number)) {
+    continue;
+}
+//ar jis didesnis uz jau zinoma didziausia skaiciu
     if (number > biggest) {
         biggest = number;
     }
-
+if (biggest === -Infinity) {
+    return 'ERROR: sarase nerastas nei vienas normalus skaicius';
+}
 
 }
 
 //result
-return 1;
+return biggest;
 }
 
 
@@ -37,4 +45,5 @@ console.log(bigNum([69, 69, 69, 69, 66]), '->', 69);
 console.log(bigNum([-1, -2, -3, -4, -5, -6, -7, -8]), '->', -1);
 console.log(bigNum('pomidoras'));
 console.log(bigNum([]));
-
+console.log(bigNum([-1, -2, -3, Infinity, -5, -6, -7, -8]), '->', -1);
+console.log(bigNum([Infinity, -1, -2, -3, -5, -6, -7, -8]), '->', -1);
