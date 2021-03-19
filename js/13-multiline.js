@@ -43,28 +43,36 @@ console.log( daugyba( skaicius1, skaicius3 ) );
 rezultatas: teisingos reikšmės;
 
 */
+//https://www.codewars.com/kata/50654ddff44f800200000004/solutions/javascript
 
-function daugyba (k, t) {
-   if (typeof k !== 'number')
+function multiply(a, b) {
+   if (typeof a !== 'number')
    return 'Pirmasis parametras turi buti skaiciaus tipo';
-    if (typeof t !== 'number')
+    if (typeof b !== 'number')
     return 'Antrasis turi buti skaiciaus tipo';
-    if (isNaN(k)) {
+    if (isNaN(a)) {
         return 'Pirmasis parametras turi buti normalus skaicius';
-    } if (isNaN(t)) {
+    } if (isNaN(b)) {
         return 'Antras parametras turi buti normalus skaicius'; 
     } 
-        if (k === Infinity) {
+        if (a === Infinity) {
     return 'Pirmasis parametras turi buti normalus skaicius';
     }
-         if (t === Infinity) {
+         if (b === Infinity) {
     return 'Antras parametras turi buti normalus skaicius';
          }
-    const daugyba = k * t;
-    return daugyba;
+    const multiply = a * b;
+    return multiply;
 }
+console.log(multiply(1,1), 1);
+console.log(multiply(2,2), 1);
 
-console.log(daugyba(4, 5));
+
+/*assert.strictEqual(multiply(2,1), 2);
+assert.strictEqual(multiply(2,2), 4);
+assert.strictEqual(multiply(3,5), 15);
+*/
+/*console.log(daugyba(4, 5));
 console.log(daugyba(5, 5));
 console.log(daugyba(9, 5));
 console.log(daugyba(7, 5));
@@ -82,3 +90,4 @@ console.log(daugyba(Infinity, 5));
 console.log(daugyba(7, Infinity));
 console.log(daugyba(-Infinity, 5));
 console.log(daugyba(7, -Infinity));
+*/
