@@ -19,22 +19,14 @@ console.log(centuryFromYear(1601));
 console.log(centuryFromYear(2000));
 console.log(centuryFromYear(89)); */
 
-const id = '1';
-    
-switch(id){
-      case '1':
-        console.log('Mercury');
-        break;
+function getPlanetName(Name) {
+  return Name;
+}
+console.log(getPlanetName(2), '->', 'Venus');
+console.log(getPlanetName(5), '->', 'Jupiter');
+console.log(getPlanetName(3), '->', 'Earth');      
 
-      case '2':
-        console.log('Venus');
-        break;
 
-      case '3':
-        console.log('Earth');
-        break;
-    }
-    
 
 
  /* case 4:
@@ -63,5 +55,45 @@ switch(id){
 
     default:
         console.log('tokia diena neegzistuoja');
+} */
+
+
+/*  https://www.codewars.com/kata/5966e33c4e686b508700002d/train/javascript */
+
+
+/*function sumStr(a,b) {
+const sumStr = '' + skaicius;
+if (typeof skaicius !== 'number') {
+  const suma = (a + b);
+  console.log(suma);  
+} 
+
+console.log(sumStr("4","5"),'->', 9);
+console.log(sumStr("34","5"), '->', 39);
+
+const tekstinisSkaicius = '' + skaicius;
+let skaitmenuKiekis = tekstinisSkaicius.length;
+
+*/
+
+function sumStr(a, b) {
+  const str1 = a === '' ? 0 : parseInt(a);
+  const str2 = b === '' ? 0 : parseInt(b);
+
+  return '' + (str1 + str2);
 }
+
+console.log(sumStr("4", "5"), '->', "9");
+console.log(sumStr("34", "5"), '->', "39");
+
+
+// paversti teksta i skaicius
+//atlikti skaiciu suma
+
+
+/*}if (typeof number === 'number'  ) {
+  const sum = (a + b);
+  console.log(sum);  
+}
+*/ 
 
