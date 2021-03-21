@@ -72,3 +72,38 @@ function opposite(n) {
   console.log(0);
   console.log(-3.2);
 
+///
+/*function reverseArray(arr) {
+  var newArray = [];
+  for (var i = arr.length - 1; i <= 0; i--
+    ) {
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
+*/
+
+//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
+
+
+function invert(array) {
+  if (!Array.isArray(array)) {
+    return 'Error';
+  }
+  let newArray = list[0];
+  for (let i = 0; i <= array.length; i++) {
+    const number = list[i];
+    return -number;
+  }
+  {if (typeof array === 'object');
+  return [];
+  return newArray;
+}
+}
+console.log(invert([1,2,3,4,5]), '->', [-1,-2,-3,-4,-5]);
+console.log(invert([1,-2,3,-4,5]), '->', [-1,2,-3,4,-5]);
+console.log(invert([]), '->', []);
+console.log(invert([0]), '->', [0]);
+
+
+
