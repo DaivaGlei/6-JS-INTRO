@@ -87,6 +87,6 @@ const pc = {
         }
     ]
 }
-
+}
 const totalKBs = longestFile(pc);
 console.log('Longest name:', totalKBs, 'symbols'); 

@@ -5,10 +5,10 @@ salygos:
 -visi skaiciai yra normalus
 */
 
-function recMaxNum() {
-    let big = list[0];
+function recMaxNum(list) {
+    let big = -Infinity;
 
-    for (let i = 0; i < list.lenght; i++ ) {
+    for (let i = 0; i < list.length; i++ ) {
 const num = list[i];
 
 if (Array.isArray(num)) {
@@ -42,7 +42,7 @@ const data = [
         ],
         80
     ],
-    78
+    78,
     8,
     [
         99
