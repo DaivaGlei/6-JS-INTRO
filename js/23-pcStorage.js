@@ -23,20 +23,70 @@ return totalSize;
 
 }
 const pc = {
-name: 'c',
-type: 'folder',
-content: [
-{
-    name: 'Program files',
+    name: 'C',
     type: 'folder',
-    content: []
-},
-{
-
+    content: [
+        {
+            name: 'Programs Files',
+            type: 'folder',
+            content: [
+                {
+                    name: 'Android',
+                    type: 'folder',
+                    content: []
+                },
+                {
+                    name: 'GIMP 2',
+                    type: 'folder',
+                    content: [
+                        {
+                            name: 'dbghelp.dll',
+                            type: 'file',
+                            size: 1497,
+                            sizeUnits: 'kb'
+                        },
+                        {
+                            name: 'gimp-2.10.exe',
+                            type: 'file',
+                            size: 9138,
+                            sizeUnits: 'kb'
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            name: 'Windows',
+            type: 'folder',
+            content: [
+                {
+                    name: 'DiagTrack',
+                    type: 'folder',
+                    content: [
+                        {
+                            name: 'analyticsevents.dat',
+                            type: 'file',
+                            size: 2,
+                            sizeUnits: 'kb'
+                        },
+                        {
+                            name: 'utc.allow.diffbase',
+                            type: 'file',
+                            size: 468,
+                            sizeUnits: 'kb'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: 'msdia80.dll',
+            type: 'file',
+            size: 884,
+            sizeUnits: 'kb'
+        }
+    ]
 }
-]
 
-
-}
 const totalKbs = storage(pc);
-console.log('Used')
+console.log('Used');
