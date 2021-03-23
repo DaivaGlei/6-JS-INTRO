@@ -84,4 +84,42 @@ console.log(dwi);
 dwi++;
  } while (dwi < 5)  // jei nebutu while tuomet baigtu ties 0
 
- 
+
+
+ console.clear();
+
+ //FOREACH
+
+ let suma = 0;
+
+ list.forEach(function (item) {
+     suma += item;
+console.log(item);
+
+ })
+ console.log(suma);
+
+ /********************/ 
+
+ list.forEach(function (item, i, arr) {   //gali buti ir vien tik item ar i ar arr
+console.log(i, item, arr);                  // jo sustabdyti negalima, jei yra sarasas nuo pradziu iki galo varo
+
+ })
+
+ /*55555555555*/
+
+ list.forEach(item => suma += item)    //susumuok sarasa
+    
+    /* */
+
+    let FEsuma = 0;
+    list.forEach(n => FEsuma += n)
+    console.log(FEsuma);
+
+    /*0000000000000000000000*/
+
+    const doubleList = [[1, 5], [8, 99], [-8, -7, 15, 4], [3]];
+    let d1Suma = 0;
+
+    doubleList.forEach(innerList => innerList.forEach(n => d1Suma +=n));
+        console.log(d1Suma);

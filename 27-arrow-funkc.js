@@ -79,3 +79,11 @@ const paskutine = paskutineRaide(vardas);
 console.log(raide);
 console.log(paskutine);
 
+/************************* */
+
+function abbrevName(name) {
+const zodziai = name.split(' ');
+const abbr = zodziai[0][0] + '.' + zodziai[1][0];
+    return abbr.toUpperCase(); 
+}
+
