@@ -88,7 +88,7 @@ dwi++;
 
  console.clear();
 
- //FOREACH
+ //FOREACH soko ant saraso ir dirbo ir ziuri ka reikia daryti
 
  let suma = 0;
 
@@ -123,3 +123,102 @@ console.log(i, item, arr);                  // jo sustabdyti negalima, jei yra s
 
     doubleList.forEach(innerList => innerList.forEach(n => d1Suma +=n));
         console.log(d1Suma);
+
+
+        //MAP modifikuoti arrejaus reiksmes
+        // map() metodas perejes per duota sarasa graina tokio pacio dydzio sarsa, tik su pakeistomis reiksmemis
+
+const mapList = [1, 2, 3, 4, 5, 6];
+const forListSquare = [];
+for (const num of mapList){
+mapListSquare.push(num * num);
+
+}
+console.log(forListSquare);
+
+// iskarto grazina atsakymus ir grazina tame paciame formate
+const mapListSquare = mapList.map(n => n *n);
+console.log(mapListSquare);
+
+/******************************/
+//uzdavinys:visi neigiami skaiciai konvertuojami i nulius, teigiami paliekami tokie patys
+const pazymiai = [10, -8, 2, -6, 8, -2];
+
+const konvertuotiPazymiai = pazymiai.map(n => n < 0 ? 0 : n);
+console.log(pazymiai);
+console.log(konvertuotiPazymiai);
+
+////
+
+console.clear()
+
+const desimtainiai = [3.14, 5, 6.7, -14.7, -8, 0.01];
+const sveikieji = desimtainiai.map(n => Math.round(n));
+
+console.log(desimtainiai);
+console.log(sveikieji);
+
+//////////// ant textu mapas neveikia
+
+/****************************/
+
+for (let i=0; i<desimtainiai.length; i++) {
+desimtainiai[i] = Math.round(desimtainiai[i]);
+
+}
+console.log(desimtainiai);
+
+console.clear();
+
+//FILTER jis atfiltruoja tik reikalingus duomenis
+//atrinkti tik tikrus pazymius [1...10]
+
+const pazymiai = [10, -8, 2, -8, 2, -2];
+const filteredMarks = marks.filter(m => m > 0);
+
+console.log(marks);
+console.log(filteredMarks);
+
+//////////////// jei yra 55
+const pazymiai = [10, -8, 2, -8, 2, -2, 55, 55];
+const filteredMarks = marks.filter(m => m > 0 && m < 11);
+
+console.log(marks);
+console.log(filteredMarks);
+///////////// jei yra 3.14
+const pazymiai = [10, -8, 3.14, -8, 2.8, -2, 55, 55];
+const filteredMarks = marks.filter(m => m >= 1 && m <= 10 && m % 1===0);
+
+console.log(marks);
+console.log(filteredMarks);
+
+console.clear();
+/****************************/
+//palikti zodzius is didziosios raides
+
+const dictionary = ['Labas', 'rytas', 'Lietuva'];
+const isDidziosiosRaides = dictionary.filter(word => word[0] === word[0].toUpperCase());
+                    /// jei noresi isrinkti visas zodis kad butu uperkase tada [0] nereikia nurodyti pirmos raides
+console.log(dictionary);
+console.log(isDidziosiosRaides);
+
+//REDUCE 
+//eina per sarasa, paima visas reiksmes is eiles ir su jomis padaro viena bendra rezultata
+//pvz. jei turime pazymiu sarasa tai eina per pazymius ir suskaiciuoja pazymiu suma
+
+const petriukoPazymiai = [10, 2, 8, 6, 4];
+
+let petriukoPazymiuSuma = 0;  //=20; jei pridedame 20
+petriukoPazymiai.forEach(p => petriukoPazymiuSuma += p);
+console.log(petriukoPazymiuSuma);
+
+////////////// su reducu
+const reducedPazymiai = petriukoPazymiai.reduce((total, paz) => total + paz); ////,20); tuomet prides 20 prie vidurkio
+console.log(reducedPazymiai);
+
+/// koks gausis tekstas, jei sujungsime visu zodziu pirmas raides
+const dictionary2 = ['Labas', 'rytas', 'Lietuva'];
+
+const short = dictionary2.reduce((total, word) => total + word[0], '');    /// '' initial value, tada pirma zodi paima pirma raide
+console.log(short);
+
