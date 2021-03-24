@@ -248,4 +248,6 @@ function abcCompare(a, b) {
 const abc =['A', 'a', '']    ///arba 'AaBbCc';
 
 }
- 
+const sortedNumber = [...sortList].sort((a, b) => b - a);
+ //darbas vyksta ant kopijuotu duomenu
+
