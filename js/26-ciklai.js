@@ -222,3 +222,30 @@ const dictionary2 = ['Labas', 'rytas', 'Lietuva'];
 const short = dictionary2.reduce((total, word) => total + word[0], '');    /// '' initial value, tada pirma zodi paima pirma raide
 console.log(short);
 
+// SORT isrikiavimas abeceles tvarka
+
+const sortList = [10, 2, 8, 6, 4];
+
+const sortAbc = ['a', 'c', 'f'];
+const sorted = sortList.sort();
+const sortedAbc = sortAbc.sort();
+
+
+console.log(sorted);
+console.log(sortedAbc);
+
+///skaiciu sort
+const sortList = [10, 2, 8, 6, 4];
+const sortedNumber = sortList.sort((a, b) => a - b); // a-b issortintas matematiskai a saraso priekyje, b saraso gale, jei atvirkciai sortinti tada b-a reikia nurodyti
+//arba taip uzrasom const sortedNumber = sortList.sort((a, b) => a < b ? -1 : 1);
+
+console.log(sortedNumber);
+// a-b rodo matematiskai nuo maziusio iki didziausio
+// b-a tada isdelioti nuo didziausio iki maziausio
+//{} cia kur {a, b} sako daugiau kad bus vienas ar daugiau parametru
+////////////////// jei rusiuoti zodzius! pasirasyti abecele ir tada lyginti skaicius
+function abcCompare(a, b) {
+const abc =['A', 'a', '']    ///arba 'AaBbCc';
+
+}
+ 
