@@ -1,4 +1,5 @@
-   // '...' operatorius spread
+ 
+ /*// '...' operatorius spread
 // yra kai sarasa mes isskleidziame panariui
 //sujungti sarasus i viena vieta
 
@@ -79,3 +80,19 @@ console.log(dd);
 //naviguoja adresais, bet ne kintamaisiais. 
 
 
+const desimtainiai = [3.14, 5, 6.7, -14.7, -8, 0.01];
+//const sveikieji = desimtainiai.map(n => Math.round(n));
+
+desimtainiai.forEach(n, i) => desimtainiai[i] = Math.round(n));
+
+
+console.log(desimtainiai);
+
+//jei yra constanta a yra skaicius ir norim priskirti kitam, kuris neleiciamas
+//jei sarasa yra tada saraso vidines reiksmes overaidinti its ok
+
+const a = [5]; //galioja visam bileteliui, bet ne vienai reksmei
+
+a[0] = 9;  ///negalima rasyti  a = [9]   !!!!!!!!!!!!!!
+
+*/
